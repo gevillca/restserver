@@ -8,7 +8,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
   urlDB = 'mongodb://localhost/dbcafe';
 } else {
-  urlDB = 'mongodb+srv://sylar:dota123@cluster1-nrbne.mongodb.net/test';
+  urlDB = process.env.MONGO_URI;
 }
 
 process.env.urlDB = urlDB;
