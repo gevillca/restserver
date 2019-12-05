@@ -6,7 +6,10 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // app.use('./routes/app');
-app.use(require('../routes/usuario'));
+
+// configuracion global de routes
+
+app.use(require('./routes/index'));
 app.listen(process.env.PORT, () => {
   console.log(`Corriendo en el puerto ${process.env.PORT}!`);
 });
