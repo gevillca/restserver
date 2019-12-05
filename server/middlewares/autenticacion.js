@@ -20,7 +20,7 @@ let verificaToken = (req, res, next) => {
   // console.log(token);
 };
 //========================
-// VERIFICAR TOKEN
+// VERIFICAR ADMINISTRADOR
 //========================
 
 let verificaAdmin_Role = (req, res, next) => {
