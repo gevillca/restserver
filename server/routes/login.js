@@ -137,10 +137,6 @@ app.post('/google', async (req, res) => {
       });
     }
   });
-  // verify(token);
-  // res.json({
-  //   token
-  // });
 });
 
 module.exports = app;
