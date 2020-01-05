@@ -82,7 +82,6 @@ app.get('/producto/buscar/:termino', verificaToken, (req, res) => {
         });
       }
       res.json({ ok: true, productoDB });
-      console.log(productoDB);
     });
 });
 // =======================================================
@@ -96,7 +95,6 @@ app.post('/producto', verificaToken, (req, res) => {
     descripcion: req.body.descripcion,
     categoria: req.body.categoria
   });
-  console.log('producto', producto);
 
   producto.save((err, productoDB) => {
     if (err) {
